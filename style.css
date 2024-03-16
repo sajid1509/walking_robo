@@ -1,0 +1,190 @@
+.header{
+	font-size: 60px;
+}
+.total{
+	margin: auto;
+	background: blue;
+	height:300px;
+	width:300px;
+	border-radius: 10% 10% 10% 10%;
+}
+.heads{
+	height: 100px;
+	width: 100px;
+	background: chartreuse;
+	border-radius: 50% 50% 0 0;
+	margin: auto;
+}
+.eyes{
+	display:flex;
+	justify-content: space-around;
+	padding-top:50px ;
+
+}
+.leye,.reye{
+	border-radius: 50% 50% 50% 50% ;
+	background-color: black;
+	height:15px;
+	width:15px;
+}
+.bodi{
+	width:150px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	margin-top:10px;
+	position: relative;
+
+	
+}
+.lh,.rh{
+	height:60px;
+	width:15px;
+	border-radius: 10% 10% 20% 20%;
+	background:chartreuse;
+
+}
+.stom{
+	height:100px;
+	width:100px;
+	border-radius: 0 0 50% 50%;
+	background: chartreuse;
+	margin: auto;
+}
+.legs{
+	width: 100px;
+    display:flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: -13px;
+    position: relative;
+}
+.ll,.rl{
+	height:60px;
+	width:15px;
+	background: chartreuse;
+	border-radius:0 0 30% 30%;
+
+}
+.total:hover .heads{
+	background: yellow;
+    	transition: width 1s ease-in;
+	transform: scale(0.8);
+	animation: movehead 1s 0.1s infinite;
+}
+@keyframes movehead{
+	0%{
+		transform: scale(1.0);
+	}
+	25%{
+		transform: scale(1.0);
+	}
+
+}
+.total:hover .lh{
+		background: yellow;
+	animation: movelh 1s 0.1s infinite;
+}
+@keyframes movelh{
+	0%{
+		rotate:0deg;
+	}
+	50%{
+		rotate: 90deg;
+		transform-origin: top;
+	}
+	100%{
+		rotate: -90deg;
+		transform-origin: top;
+	}
+
+}
+.total:hover{
+	animation: movetot 1s 0.1s infinite;
+}
+@keyframes movetot{
+	0%{
+		background: black
+	}
+	25%{
+	   background: red;
+	}
+	50%{
+	background: purple;
+     }
+    75%{
+    	background:blak;
+    }
+    100%{
+    	background: forestgreen;
+    }
+
+}
+.total:hover .rh{
+		background: yellow;
+	animation: moverh 1s 0.1s infinite;
+}
+@keyframes moverh{
+	0%{
+		rotate:0deg;
+		transform-origin: top;
+	}
+	50%{
+		rotate: 90deg;
+		transform-origin: top;
+	}
+	100%{
+	rotate: -90deg;
+	transform-origin: top;
+     }
+}
+
+.total:hover .stom{
+	animation: movestom 1s 0.1s infinite;
+	background: yellow;
+}
+@keyframes movestom{
+	50%{
+		transform: skewX(10deg);
+	}
+	100%{
+		transform: skewX(-10deg);
+	}
+
+}
+.total:hover .ll{
+	animation: movell 1s 0.1s infinite;
+	background: yellow;
+
+}
+@keyframes movell{
+	0%{
+		transform: scale(0.5);
+		transform-origin: top;
+	}
+	50%{
+		transform: scale(1);
+		transform-origin: top;
+	}
+	100%{
+		transform: scale(0.5);
+		transform-origin: top;
+	}
+
+
+}
+.total:hover .rl{
+	animation: moverl 1s 0.1s infinite;
+	background: yellow;
+}
+@keyframes moverl{
+	50%{
+		transform: scale(0.5);
+		transform-origin: top;
+	}
+	100%{
+		transform: scale(1);
+		transform-origin: top;
+	}
+
+}
